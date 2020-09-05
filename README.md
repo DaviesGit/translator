@@ -105,7 +105,7 @@ project
 
 
 
-发行版可以在[release页面]()下载。
+发行版可以在[release页面](https://github.com/DaviesGit/translator/releases)下载。
 
 ### Built With
 使用的库或技术
@@ -135,7 +135,7 @@ project
 
 ### Installation
 
-1. 在[release页面]()下载最新版Windows安装包。
+1. 在[release页面](https://github.com/DaviesGit/translator/releases)下载最新版Windows安装包。
 2. 解压压缩包到任意位置。
 
 
@@ -207,7 +207,6 @@ Davies - [@email](1182176003@qq.com) - 1182176003@qq.com
 * 该软件不提供任何形式的保证。我们不保证内容的正确性与完整性。所有与使用该软件的直接风险均由用户承担。
 
 * 如果您认为该软件中所包含的部分内容侵犯了您的权益，请及时通知我们，我们将尽快予以修正或删除。
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
