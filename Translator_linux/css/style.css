@@ -1,0 +1,114 @@
+
+body{
+    background-color: transparent;
+    overflow:hidden;
+}
+
+
+tr>.text-right{
+    border-right: 1px solid #dee2e6;
+}
+
+#word_exchange,
+#word_exchange th,
+#word_exchange td{
+    border-width: .1px;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.dragable{
+     -webkit-app-region: drag;
+}
+
+
+#notice_row{
+    height: 66px;
+}
+
+.container.unselectable.dragable{
+    height: 48px;
+}
+
+#search_box{
+    height: 38px;
+}
+
+.height_animation{
+    overflow: hidden;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.45, -1.5, 0.55, 2.5);
+    transition-property: height;
+}
+.height_animation_quickly{
+    overflow: hidden;
+    transition-duration: .3s;
+    transition-timing-function: cubic-bezier(0.4, 0.76, 0.58, 1);
+    transition-property: height;
+}
+
+
+.container_outer{
+    background-color:white; 
+    border-radius:0rem;
+    overflow:hidden;
+    height: 240px;
+}
+.container_inner{
+    background-color:transparent; 
+}
+
+
+.word_meaning_container .word_example{
+    line-height: 1rem;
+}
+.word_meaning_container .word_meaning{
+    font-size: 1rem;
+    line-height: 1.15rem;
+    padding-bottom:0.2rem;
+}
+
+.word_meaning_container .word_meaning_translation{
+    font-size: 1rem;
+    line-height: 1rem;
+    padding-bottom:0.2rem;
+}
+.word_meaning_container .word_example_translation{
+    font-size: .8rem;
+    line-height: .8rem;
+}
+
+
+.word_synonym li,#synonymy li{
+    line-height: 1.15rem;
+}
+
+.word_synonym li:nth-of-type(odd),#synonymy li:nth-of-type(odd){
+    background-color:rgba(136, 255, 255, 0.35);
+}
+
+.word_synonym li:nth-of-type(even),#synonymy li:nth-of-type(even){
+    background-color: rgba(131, 255, 169, 0.35);
+}
+
+
+td>.word_meaning_container:nth-child(1)>hr{
+    display: none;
+}
+
+#en_result{
+    max-height: 500px;
+    overflow-y:auto;
+}
+
+.idiom{
+    background-color: rgba(113, 196, 255, 0.18);
+}
+

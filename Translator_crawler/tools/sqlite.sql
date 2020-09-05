@@ -1,0 +1,10 @@
+UPDATE words SET is_baidu_translate_ok=NULL WHERE is_baidu_translate_ok='null';
+UPDATE words SET is_google_translate_ok=NULL WHERE is_baidu_translate_ok='null';
+UPDATE words SET is_baidu_American_pronunciation_ok=NULL WHERE is_baidu_translate_ok='null';
+UPDATE words SET is_baidu_British_pronunciation_ok=NULL WHERE is_baidu_translate_ok='null';
+UPDATE words SET is_google_American_pronunciation_ok=NULL WHERE is_baidu_translate_ok='null';
+UPDATE words SET is_google_British_pronunciation_ok=NULL WHERE is_baidu_translate_ok='null';
+UPDATE words SET is_cambridge_American_pronunciation_ok=NULL WHERE is_baidu_translate_ok='null';
+UPDATE words SET is_cambridge_British_pronunciation_ok=NULL WHERE is_baidu_translate_ok='null';
+UPDATE words SET is_collins_American_pronunciation_ok=NULL WHERE is_baidu_translate_ok='null';
+UPDATE words SET is_collins_British_pronunciation_ok=NULL WHERE is_baidu_translate_ok='null';

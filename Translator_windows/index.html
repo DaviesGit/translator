@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Translator</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./asset/icon.ico">
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body></body>
+<div class="container_outer">
+  <div class="container_inner">
+    <div style="cursor: default;" class="container unselectable dragable height_animation">
+      <div class="row">
+        <div class="col text-center"><img src="./asset/icon.png" class="align-middle" style="height:2rem;"><span class="align-middle ml-2" style="font-size:2rem;color:rgb(49,149,248);">Translator</span></div>
+      </div>
+    </div>
+    <div id='search_box' class="container height_animation">
+      <div class="row">
+        <div class="col">
+          <form id="form_word" class="input-group">
+            <div class="input-group-prepend"><span class="input-group-text">word:</span></div><input id="word" class="form-control" type="text" placeholder="initializing.....">
+            <div class="input-group-append"><button class="btn btn-primary" type="submit">Go!</button></div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div id="notice_row" class="row height_animation">
+        <div class="col-12 p-2">
+          <div role="alert" class="alert alert-primary m-0"><span id="notice">initializing.....</span></div>
+        </div>
+      </div>
+      <div class="row pl-2">
+        <div class="p-2">
+          <span id="dst"></span>
+        </div>
+      </div>
+      <div id="word_exchange" class="table-responsive table-bordered" style="overflow:hidden; display:none;">
+        <table class="table table-striped table-bordered table-sm m-0">
+          <thead>
+            <tr>
+              <!-- <th>done</th> -->
+              <!-- <th>er</th> -->
+              <!-- <th>est</th> -->
+              <!-- <th>ing</th> -->
+              <!-- <th>past</th> -->
+              <!-- <th>pl</th> -->
+              <!-- <th>third</th> -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <!-- <td id="word_done"></td> -->
+              <!-- <td id="word_er"></td> -->
+              <!-- <td id="word_est"></td> -->
+              <!-- <td id="word_ing"></td> -->
+              <!-- <td id="word_past"></td> -->
+              <!-- <td id="word_pl"></td> -->
+              <!-- <td id="word_third"></td> -->
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <hr class="mt-1 mb-1">
+      <div id="en_result" class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead style="display:none">
+            <tr>
+              <th style="width: 0rem;"></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-right">noun</td>
+              <td>word translate result!</td>
+            </tr>
+
+            <!-- <tr>
+              <td class="text-right">n.</td>
+              <td class="p-0">
+                <div style="display:block;" class="oxford word_meaning_container">
+                  <hr class="m-0">
+                  <div class="p-1">
+                    <div class="oxford word_meaning"><span><strong>of great vertical extent.</strong></span></div>
+                    <div style="display: none;" class="oxford word_meaning_translation"><span><strong>站在某个高度</strong></span></div>
+                    <div style="display: block;" class="oxford word_example pl-2">
+                      <hr class="m-0">
+                      <q>the top of a high mountain</q>
+                      <div style="display: none;" class="oxford word_example_translation pt-1 pb-1"><q>在山的顶端</q></div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr> -->
+
+             <!-- <tr>
+              <td class="text-right">n.</td>
+              <td class="p-0">
+                <div style="display:block;" class="google word_meaning_container">
+                  <hr class="m-0">
+                  <div class="p-1">
+                    <div class="google word_meaning"><span><strong>of great vertical extent.</strong></span></div>
+                    <div class="google word_example pl-2 pb-1"><q>the top of a high mountain</q></div>
+                    <div style="display: none;" class="google word_synonym">
+                      <ul class="list-inline mb-0 pb-1">
+                        <li class="list-inline-item border rounded">Item 1</li>
+                        <li class="list-inline-item border rounded">Item 2</li>
+                        <li class="list-inline-item border rounded">Item 3</li>
+                        <li class="list-inline-item border rounded">Item 4</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>  -->
+          </tbody>
+        </table>
+      </div>
+      <div style="display:none;" id="baidu_result" class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th style="width: 0rem;"></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="baidu_result_table">
+            <tr>
+              <td class="text-right">adj.</td>
+              <td>word translate result!</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="synonymy" class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th style="width: 4rem;"></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+      <hr class="mt-1 pb-3">
+      <!-- <ul  class="list-inline">
+        <li class="list-inline-item">Lorem ipsum</li>
+        <li class="list-inline-item">Phasellus iaculis</li>
+        <li class="list-inline-item">Nulla volutpat</li>
+      </ul> -->
+    </div>
+
+
+  </div>
+</div>
+
+<!-- <script src="assets/bootstrap/js/bootstrap.min.js"></script> -->
+<script>
+  require('./render.js');
+
+</script>
+</body>
+
+</html>

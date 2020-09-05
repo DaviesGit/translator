@@ -1,0 +1,14 @@
+{
+  "name": "Translator",
+  "version": "4.0.0",
+  "description": "A powerful translator",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Davies",
+  "license": "None",
+  "devDependencies": {
+    "electron": "~1.7.8"
+  }
+}
